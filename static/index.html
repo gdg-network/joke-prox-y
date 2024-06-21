@@ -12,6 +12,16 @@
       <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
    </head>
    <body>
+      <div id="panicPopup" class="themesExcluded">
+  <div id="panicPopup-content" class="themesExcluded">
+    <h2 style="font-family:poppins;">Panic Key</h2>
+    <input id="panicPopup-input" class="popupInput" placeholder="Set a key" onclick="detectKey()">
+    <p style="font-size:13px;">Warning: Make sure to set a unique key, otherwise you may accidently press it.</p>
+    <p id="pkErrorMessage" style="display:none;font-size:13px;color:red;">Please enter a key.</p><br>
+    <button anim="ripple" onclick="savePK()" class="button-6">Save</button>
+    <button anim="ripple" onclick="closePK()" class="button-6">Cancel</button>
+  </div>
+</div>
       <div id="header">
          <img src="logo.gif" alt="Logo">
       </div>
